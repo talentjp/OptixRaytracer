@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CRayTracer" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAJBAAAAABAAAhAAAKAIQEEABgcADMAAAAIAAAgAA=</HashCode>
+      <FileName>CRayTracer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GCOctree" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCOctree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GCNode" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCOctree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GCProjectionTransform" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gBAAAAAAAABABAAIAQAAAAAAAAAAAEAIAgCgAAAABAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCProjectionTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GCViewTransform" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgAIAAAAAAgIAAAAAAAAAAAAAAACAAACAAAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCViewTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GCWorldTransform" Collapsed="true">
+    <Position X="11.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAJAAAQAAACAAAAAABAAAAAAAAABAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCWorldTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ILight" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAQABAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Lights.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPointLite" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAQABEAAAAAAAAAAAAAAAQAAAAAACAAAAAAAEAAAA=</HashCode>
+      <FileName>Lights.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDirectionalLite" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAQABAAAABAAAAAAAAAAAQAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Lights.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLinearAlgebraTool" Collapsed="true">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>LinearAlgebraTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IShape" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAgAAAAQAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Shapes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTriangle" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABEAgAAAAQAAgACAAAAAAAAIAAAAEAAAQAAAAAAA=</HashCode>
+      <FileName>Shapes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSphere" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABEAgAAAIQAAAAAAAAAAAAAAAAAAEAEBABAQAAAA=</HashCode>
+      <FileName>Shapes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GCDegree" Collapsed="true">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAFAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCDegree.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GCMatrix" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAICAAAAAhAAEIAAAAAAABAACAAACAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCMatrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GCPoint" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAYAAAAAAAAAAAAAEAAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCPoint.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GCRadian" Collapsed="true">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAACAAAAAAAEAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCRadian.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GCVector" Collapsed="true">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAIAEAAIAAAAAAAAIAAAABgCQACAAA=</HashCode>
+      <FileName>C:\Users\Talent\Dropbox\Work In Progress\Windows\GPURayTracer\GenericGraphicsEngine\GCVector.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Ray" Collapsed="true">
+    <Position X="2.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structs.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Material" Collapsed="true">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEABAAAAAAAAAAAIAAAAAAIAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Structs.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IntersectInfo" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAYAgAAAA=</HashCode>
+      <FileName>Structs.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="SmartShape" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CRayTracer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SmartLight" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CRayTracer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TySolution" Collapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LinearAlgebraTool.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TyEquation" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LinearAlgebraTool.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

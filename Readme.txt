@@ -1,0 +1,1 @@
+Install CUDA and Optix and put optixRaytracer in Optix SDK folder

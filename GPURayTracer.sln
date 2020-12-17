@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GPURayTracer", "GPURayTracer\GPURayTracer.vcxproj", "{8D895412-8A77-47E3-89ED-77D3807E95AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Debug|Win32.Build.0 = Debug|Win32
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Debug|x64.ActiveCfg = Debug|x64
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Debug|x64.Build.0 = Debug|x64
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Release|Win32.ActiveCfg = Release|Win32
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Release|Win32.Build.0 = Release|Win32
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Release|x64.ActiveCfg = Release|x64
+		{8D895412-8A77-47E3-89ED-77D3807E95AF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E9F7397-95C0-47B0-B5B7-48FB1CACFF73}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

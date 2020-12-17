@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D895412-8A77-47E3-89ED-77D3807E95AF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GPURayTracer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\.;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\GLFW\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\imgui\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\cuda;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4355;4996;4800</DisableSpecificWarnings>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\FreeImage</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\lib\x64\cudart_static.lib;C:\Users\talen\Documents\OptixBuild\lib\Debug\imgui.lib;C:\Users\talen\Documents\OptixBuild\lib\Debug\sutil_7_sdk.lib;C:\Users\talen\Documents\OptixBuild\lib\Debug\glfw3dll.lib;C:\Users\talen\Documents\OptixBuild\lib\Debug\glad.lib;opengl32.lib;FreeImage.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;OPTIX_SAMPLE_NAME_DEFINE=optixRaytracer;OPTIX_SAMPLE_DIR_DEFINE=optixRaytracer;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\.;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\GLFW\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\imgui\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\cuda;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\optixRaytracer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4355;4996;4800</DisableSpecificWarnings>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\FreeImage</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\lib\x64\cudart_static.lib;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\Build\lib\Debug\imgui.lib;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\Build\lib\Debug\sutil_7_sdk.lib;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\Build\lib\Debug\glfw3dll.lib;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\Build\lib\Debug\glad.lib;opengl32.lib;FreeImage.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\.;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\GLFW\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\imgui\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\cuda;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4355;4996;4800</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\FreeImage</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Users\talen\Documents\OptixBuild\lib\Release\imgui.lib;C:\Users\talen\Documents\OptixBuild\lib\Release\sutil_7_sdk.lib;C:\Users\talen\Documents\OptixBuild\lib\Release\glfw3dll.lib;C:\Users\talen\Documents\OptixBuild\lib\Release\glad.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\lib\x64\cudart_static.lib;FreeImage.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\.;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\GLFW\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\support\imgui\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\cuda;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\include;C:\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\optixPathTracer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4355;4996;4800</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\FreeImage</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Users\talen\Documents\OptixBuild\lib\Release\imgui.lib;C:\Users\talen\Documents\OptixBuild\lib\Release\sutil_7_sdk.lib;C:\Users\talen\Documents\OptixBuild\lib\Release\glfw3dll.lib;C:\Users\talen\Documents\OptixBuild\lib\Release\glad.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\lib\x64\cudart_static.lib;FreeImage.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\optixPathTracer\enumdefs.h" />
+    <ClInclude Include="..\..\..\..\..\..\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\optixPathTracer\optixRayTracer.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\Constants.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCDegree.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCMatrix.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCOctree.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCPoint.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCProjectionTransform.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCRadian.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCVector.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCViewTransform.h" />
+    <ClInclude Include="..\GenericGraphicsEngine\GCWorldTransform.h" />
+    <ClInclude Include="CRayTracer.h" />
+    <ClInclude Include="Lights.h" />
+    <ClInclude Include="LinearAlgebraTool.h" />
+    <ClInclude Include="Shapes.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GenericGraphicsEngine\GCDegree.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCMatrix.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCOctree.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCPoint.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCProjectionTransform.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCRadian.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCVector.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCViewTransform.cpp" />
+    <ClCompile Include="..\GenericGraphicsEngine\GCWorldTransform.cpp" />
+    <ClCompile Include="CLinearAlgebraTool.cpp" />
+    <ClCompile Include="GPURayTracer.cpp" />
+    <ClCompile Include="CRayTracer.cpp" />
+    <ClCompile Include="Lights.cpp" />
+    <ClCompile Include="Shapes.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\ProgramData\NVIDIA Corporation\OptiX SDK 7.1.0\SDK\optixPathTracer\optixRaytracer.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
